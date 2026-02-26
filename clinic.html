@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al Taj Fadhi Clinic – Sharjah, UAE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Al <strong>Taj</strong> Fadhi</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link"><span>01</span>Home</a></li>
+        <li><a href="#services" class="nav-link"><span>02</span>Services</a></li>
+        <li><a href="#doctors" class="nav-link"><span>03</span>Doctors</a></li>
+        <li><a href="#tests" class="nav-link"><span>04</span>Tests</a></li>
+        <li><a href="#contact" class="nav-link"><span>05</span>Contact</a></li>
+      </ul>
+      <a href="tel:+971509691037" class="nav-cta">📞 Call Now</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
+    </div>
+    <div class="hero-grid-lines"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Sharjah, United Arab Emirates
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line line-1">Al Taj</span>
+          <span class="title-line line-2 accent">Fadhi</span>
+          <span class="title-line line-3">Clinic</span>
+        </h1>
+        <div class="hero-specialties">
+          <span class="spec-pill" id="specCycle">General Medicine</span>
+        </div>
+        <p class="hero-desc">
+          Comprehensive healthcare combining modern medicine with compassionate care. Expert physicians serving Bin Landan Industrial Area, Sharjah with excellence.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn-glow">Explore Services</a>
+          <a href="#contact" class="btn-ghost">
+            <span>Book Appointment</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-quick-contact">
+          <a href="tel:0670446711" class="quick-phone">
+            <div class="phone-ring"></div>
+            <span class="phone-icon">📞</span>
+            <div>
+              <small>Call Us</small>
+              <strong>06704 4671</strong>
+            </div>
+          </a>
+          <div class="divider-v"></div>
+          <a href="tel:+971509691037" class="quick-phone">
+            <div class="phone-ring"></div>
+            <span class="phone-icon">📱</span>
+            <div>
+              <small>Mobile</small>
+              <strong>+971 050 969 1037</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="floating-card card-main">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="card-dot active"></span>
+            <span class="card-dot"></span>
+            <span class="card-dot"></span>
+            <span class="card-title">Our Specialists</span>
+          </div>
+          <div class="doctor-profile">
+            <div class="doc-avatar-wrap">
+              <div class="doc-avatar pulse-ring">👩‍⚕️</div>
+              <div class="availability-dot"></div>
+            </div>
+            <div class="doc-info">
+              <h3>Dr. Bushra Sobia</h3>
+              <div class="doc-tags">
+                <span>General Physician</span>
+                <span>Aesthetic Medicine</span>
+              </div>
+            </div>
+          </div>
+          <div class="doctor-profile" style="margin-top:20px;">
+            <div class="doc-avatar-wrap">
+              <div class="doc-avatar pulse-ring">👨‍⚕️</div>
+              <div class="availability-dot"></div>
+            </div>
+            <div class="doc-info">
+              <h3>Dr. Khan</h3>
+              <div class="doc-tags">
+                <span>MBBS</span>
+                <span>Urologist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-card card-mini card-mini-1">
+          <span class="mini-icon">✅</span>
+          <span>PRP Therapy Available</span>
+        </div>
+        <div class="floating-card card-mini card-mini-2">
+          <span class="mini-icon">🩸</span>
+          <span>On-site Blood Tests</span>
+        </div>
+        <div class="floating-card card-mini card-mini-3">
+          <span class="mini-icon">💉</span>
+          <span>Vaccination Services</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-band">
+    <div class="stats-inner">
+      <div class="stat-item reveal-up">
+        <div class="stat-num" data-target="2">0</div>
+        <div class="stat-label">Expert Doctors</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-up" style="--delay:0.1s">
+        <div class="stat-num" data-target="20">0</div>
+        <div class="stat-label">Medical Services</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-up" style="--delay:0.2s">
+        <div class="stat-num" data-target="7">0</div>
+        <div class="stat-label">Days a Week</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-up" style="--delay:0.3s">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Patient Care</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="services">
+    <div class="section-head center reveal-up">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Our <em>Medical</em> Services</h2>
+      <p class="section-desc">A comprehensive range of treatments and procedures delivered with world-class expertise and genuine care for every patient.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </section>
+
+  <!-- DOCTORS -->
+  <section class="doctors-section" id="doctors">
+    <div class="doctors-bg-deco"></div>
+    <div class="section-head reveal-up">
+      <div class="section-label">Expert Team</div>
+      <h2 class="section-title">Meet Our <em>Doctors</em></h2>
+    </div>
+    <div class="doctors-grid">
+      <div class="doctor-card-big reveal-left">
+        <div class="doc-card-bg"></div>
+        <div class="doc-card-content">
+          <div class="doc-big-avatar">👩‍⚕️</div>
+          <div class="doc-card-shimmer"></div>
+          <h3>Dr. Bushra Sobia</h3>
+          <div class="doc-big-tags">
+            <span>General Physician</span>
+            <span>Aesthetic Medicine</span>
+          </div>
+          <p>Expert in primary care, preventive medicine, and advanced aesthetic treatments including PRP therapy, hair fall treatment, skin care, and facial rejuvenation procedures. Dedicated to holistic patient wellness with a warm, patient-first approach.</p>
+          <div class="doc-highlights">
+            <div class="highlight-item"><span class="hl-icon">🌿</span> PRP Hair & Face</div>
+            <div class="highlight-item"><span class="hl-icon">💆</span> Hair Fall Treatment</div>
+            <div class="highlight-item"><span class="hl-icon">🌸</span> Skin Allergies</div>
+            <div class="highlight-item"><span class="hl-icon">🤰</span> Antenatal Care</div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor-card-big reveal-right">
+        <div class="doc-card-bg"></div>
+        <div class="doc-card-content">
+          <div class="doc-big-avatar">👨‍⚕️</div>
+          <div class="doc-card-shimmer"></div>
+          <h3>Dr. Khan</h3>
+          <div class="doc-big-tags">
+            <span>MBBS</span>
+            <span>Urologist</span>
+          </div>
+          <p>Specialist in urogenital conditions, male infertility treatment, and comprehensive urology care. Combines deep clinical expertise with a compassionate, patient-first philosophy to deliver outstanding urological outcomes.</p>
+          <div class="doc-highlights">
+            <div class="highlight-item"><span class="hl-icon">♂️</span> Male Infertility</div>
+            <div class="highlight-item"><span class="hl-icon">🚿</span> Urogenital Care</div>
+            <div class="highlight-item"><span class="hl-icon">🔬</span> Diagnostics</div>
+            <div class="highlight-item"><span class="hl-icon">🔪</span> Minor Surgery</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTS -->
+  <section class="tests-section" id="tests">
+    <div class="section-head center reveal-up">
+      <div class="section-label">Diagnostics</div>
+      <h2 class="section-title">Lab & <em>Screening</em> Tests</h2>
+      <p class="section-desc">Fast, reliable diagnostic tests available on-site for your convenience and peace of mind.</p>
+    </div>
+    <div class="tests-grid" id="testsGrid"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-orbs">
+      <div class="c-orb c-orb-1"></div>
+      <div class="c-orb c-orb-2"></div>
+    </div>
+    <div class="section-head reveal-up">
+      <div class="section-label" style="color:#87ceeb">Reach Us</div>
+      <h2 class="section-title" style="color:#fff">Contact <em>&</em> Location</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-cards reveal-left">
+        <div class="contact-card">
+          <div class="cc-icon">📍</div>
+          <div class="cc-body">
+            <h4>Location</h4>
+            <p>Bin Landan Industrial Area 11<br>Sharjah, United Arab Emirates</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">📞</div>
+          <div class="cc-body">
+            <h4>Phone Numbers</h4>
+            <a href="tel:0670446711">06704 4671</a>
+            <a href="tel:+971509691037">+971 050 969 1037</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">🕐</div>
+          <div class="cc-body">
+            <h4>Working Hours</h4>
+            <p>Sat – Thu: 9:00 AM – 9:00 PM</p>
+            <p>Friday: 4:00 PM – 9:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-card reveal-right">
+        <div class="map-inner">
+          <div class="map-pulse">
+            <div class="pulse-circle"></div>
+            <div class="pulse-dot">📍</div>
+          </div>
+          <h3>Al Taj Fadhi Clinic</h3>
+          <p>Bin Landan Industrial Area 11, Sharjah</p>
+          <a href="https://maps.google.com/?q=Bin+Landan+Industrial+Area+11+Sharjah" target="_blank" class="btn-glow" style="margin-top:24px;display:inline-block;">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">✦</span>
+        <span>Al <strong>Taj</strong> Fadhi Clinic</span>
+      </div>
+      <p>Bin Landan Industrial Area 11, Sharjah, UAE</p>
+      <div class="footer-phones">
+        <a href="tel:0670446711">06704 4671</a>
+        <span>·</span>
+        <a href="tel:+971509691037">+971 050 969 1037</a>
+      </div>
+      <p class="footer-copy">© 2025 Al Taj Fadhi Clinic · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
