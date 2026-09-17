@@ -174,7 +174,7 @@ const DICTIONARY_AR = {
   "4-Step Seamless Clinical Journey": "رحلة علاجية سلسة ومريحة في 4 خطوات",
   "Simple, Transparent, and Focused on Your Comfort": "خطوات بسيطة وشفافة تركز على راحتكم وسلامتكم",
   "Step 1: Choose Your Service or Doctor": "الخطوة 1: اختر الخدمة أو الطبيب",
-  "Step 1: Select Service or Doctor": "الخطوة 1: اختيار الخدمة أو الطبيب",
+  "Step 1: Select Service or Doctor": "الخطوة 1: اختيار الخدمة أو الطبيب" ,
   "Select from our specialized clinical consultations, PRP aesthetic treatments, or outpatient wound care.": "اختر من بين استشاراتنا الطبية، أو جلسات البلازما التجميلية، أو العناية بالجروح والغرز.",
   "Step 2: Convenient Appointment Booking": "الخطوة 2: حجز الموعد بسهولة",
   "Step 2: Book Your Preferred Slot": "الخطوة 2: تحديد موعد الزيارة",
