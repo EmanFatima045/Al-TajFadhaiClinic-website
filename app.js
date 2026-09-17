@@ -264,7 +264,8 @@ const DICTIONARY_AR = {
   "Patient Full Name *": "اسم المريض بالكامل *",
   "Enter your full name": "أدخل اسمك الكامل",
   "Mobile Phone Number (WhatsApp) *": "رقم الهاتف المحمول (واتساب) *",
-  "e.g. +971 50 902 4717": "مثال: 971509024717+",
+  "e.g. +971 50 969 1037": "مثال: 971509691037+",
+  "e.g. 050 96 91 037": "مثال: 0509691037",
   "Email Address (Optional)": "البريد الإلكتروني (اختياري)",
   "Preferred Doctor": "الطبيب المفضل",
   "No Preference / First Available": "بدون تفضيل / أول طبيب متاح",
@@ -294,12 +295,15 @@ const DICTIONARY_AR = {
 
   // Location & Hours
   "Clinic Location & Visiting Details": "موقع العيادة ومعلومات الزيارة",
-  "Easily Accessible in the Heart of Al Majaz, Sharjah": "موقع متميز وسهل الوصول في قلب المجاز بالشارقة",
+  "Easily Accessible in Industrial Area 11, Sharjah": "موقع متميز وسهل الوصول في المنطقة الصناعية 11 بالشارقة",
   "Clinic Address": "عنوان العيادة",
-  "King Faisal Street, Al Majaz, Sharjah, United Arab Emirates": "شارع الملك فيصل، منطقة المجاز، الشارقة، الإمارات العربية المتحدة",
+  "Al Soussi Building, Small Bin Ladin Signal, Industrial Area 11, Sharjah, UAE": "بناية السوسي، إشارة بن لادن الصغيرة، المنطقة الصناعية 11، الشارقة، الإمارات",
+  "King Faisal Street, Al Majaz, Sharjah, United Arab Emirates": "بناية السوسي، إشارة بن لادن الصغيرة، المنطقة الصناعية 11، الشارقة، الإمارات العربية المتحدة",
   "Working Hours": "أوقات وساعات العمل",
-  "Saturday – Thursday: 9:00 AM – 10:00 PM": "السبت – الخميس: 9:00 صباحاً – 10:00 مساءً",
-  "Friday: 2:00 PM – 10:00 PM": "الجمعة: 2:00 ظهراً – 10:00 مساءً",
+  "Monday – Saturday: 09:00 AM – 11:00 PM": "الإثنين – السبت: 9:00 صباحاً – 11:00 مساءً",
+  "Sunday: On Call & Appointment": "الأحد: تحت الطلب والمواعيد المسبقة",
+  "Saturday – Thursday: 9:00 AM – 10:00 PM": "الإثنين – السبت: 9:00 صباحاً – 11:00 مساءً",
+  "Friday: 2:00 PM – 10:00 PM": "الجمعة: 9:00 صباحاً – 11:00 مساءً",
   "Direct Phone": "هاتف العيادة المباشر",
   "WhatsApp Booking": "حجز مباشر عبر الواتساب",
   "Get Driving Directions": "الحصول على اتجاهات القيادة",
@@ -536,104 +540,104 @@ function initCuteTajBot() {
     if (isAr) {
       if (input.includes('حجز') || input.includes('موعد') || input.includes('احجز')) {
         return {
-          text: "أهلاً بك يا هلا! 🤖 يسعدني مساعدتك في حجز موعدك لدى أطبائنا المرخصين. يمكنك حجز الموعد أونلاين فوراً أو التواصل المباشر مع الدكتورة بشرى سوبيا عبر الواتساب.",
-          replies: ["حجز موعد أونلاين", "واتساب د. بشرى", "أوقات الدوام", "أسعار الاستشارات"]
+          text: "أهلاً بك يا هلا! 🤖 يسعدني مساعدتك في حجز موعدك لدى عيادة التاج الفضي. يمكنك حجز الموعد أونلاين فوراً أو التواصل المباشر عبر واتساب العيادة (050 96 91 037) أو الاتصال على (06 704 4671).",
+          replies: ["حجز موعد أونلاين", "واتساب العيادة", "أوقات الدوام", "أسعار الاستشارات"]
         };
       }
       if (input.includes('بلازما') || input.includes('prp') || input.includes('شعر') || input.includes('بشرة') || input.includes('تجميل')) {
         return {
-          text: "تقدم الدكتورة <strong>بشرى سوبيا</strong> جلسات البلازما (PRP) الملكية بأعلى معايير التعقيم:<br>• <strong>بلازما تساقط الشعر:</strong> 450 درهم / الجلسة<br>• <strong>بلازما نضارة الوجه (Vampire Glow):</strong> 500 درهم / الجلسة<br>علاجات طبيعية 100% لتحفيز الكولاجين وبصيلات الشعر.",
-          replies: ["حجز جلسة بلازما", "واتساب د. بشرى", "موقع العيادة"]
+          text: "تقدم الدكتورة <strong>بشرى سوبيا</strong> جلسات البلازما (PRP) بأعلى معايير التعقيم:<br>• <strong>بلازما تساقط الشعر:</strong> 450 درهم / الجلسة<br>• <strong>بلازما نضارة الوجه (Vampire Glow):</strong> 500 درهم / الجلسة<br>علاجات طبيعية 100% لتحفيز الكولاجين وبصيلات الشعر.",
+          replies: ["حجز جلسة بلازما", "واتساب العيادة", "موقع العيادة"]
         };
       }
       if (input.includes('جرح') || input.includes('غرز') || input.includes('خياطة') || input.includes('غيار') || input.includes('طوارئ')) {
         return {
           text: "نعم! يقدم الدكتور <strong>خان محمود</strong> خدمة <strong>العناية بالجروح السطحية وخياطة الغرز الطبية المعقمة</strong> وإزالة الغرز وتغيير الضمادات تحت التخدير الموضعي في قسم العيادات الخارجية <em>(بدون جراحات كبرى)</em>.",
-          replies: ["حجز علاج الجروح", "واتساب د. بشرى", "موقع العيادة"]
+          replies: ["حجز علاج الجروح", "واتساب العيادة", "موقع العيادة"]
         };
       }
       if (input.includes('طبيب') || input.includes('دكتور') || input.includes('بشرى') || input.includes('خان')) {
         return {
           text: "أطباؤنا المعتمدون في خدمتكم:<br>• <strong>د. بشرى سوبيا (Lic. D46336):</strong> طب عام، تجميل وبلازما، ورعاية الأمهات.<br>• <strong>د. خان محمود (Lic. DI01602):</strong> طب عام، مسالك بولية وذكورة، وخياطة الجروح المعقمة.",
-          replies: ["حجز موعد", "واتساب د. بشرى", "موقع العيادة"]
+          replies: ["حجز موعد", "واتساب العيادة", "موقع العيادة"]
         };
       }
       if (input.includes('سعر') || input.includes('أسعار') || input.includes('تكلفة') || input.includes('كم')) {
         return {
           text: "أسعار عيادة التاج الفضي شفافة وبدون رسوم خفية:<br>• استشارة طب عام: 150 درهم<br>• بلازما الشعر: 450 درهم<br>• بلازما الوجه: 500 درهم<br>• استشارة الذكورة والمسالك: 250 درهم<br>• خياطة وغيار الجروح: تبدأ من 200 درهم",
-          replies: ["حجز استشارة", "واتساب د. بشرى", "حاسبة التكلفة"]
+          replies: ["حجز استشارة", "واتساب العيادة", "حاسبة التكلفة"]
         };
       }
       if (input.includes('دوام') || input.includes('وقت') || input.includes('ساعة') || input.includes('جمعة')) {
         return {
-          text: "أوقات عمل العيادة بالشارقة:<br>• <strong>السبت – الخميس:</strong> 9:00 صباحاً – 10:00 مساءً<br>• <strong>الجمعة:</strong> 2:00 ظهراً – 10:00 مساءً<br>نرحب بالحضور المباشر والمواعيد المحجوزة 7 أيام بالأسبوع.",
+          text: "أوقات عمل العيادة بالشارقة:<br>• <strong>الإثنين – السبت:</strong> 9:00 صباحاً – 11:00 مساءً<br>• <strong>الأحد:</strong> تحت الطلب والمواعيد المسبقة<br>نرحب بالحضور المباشر والمواعيد المحجوزة.",
           replies: ["حجز موعد", "موقع العيادة", "اتصال هاتفي"]
         };
       }
       if (input.includes('موقع') || input.includes('عنوان') || input.includes('شارقة') || input.includes('مكان')) {
         return {
-          text: "موقعنا المتميز: <strong>شارع الملك فيصل، منطقة المجاز، الشارقة</strong> (قريب جداً وسهل الوصول من الشارقة ودبي مع مواقف سيارات متوفرة).",
+          text: "موقعنا المتميز: <strong>بناية السوسي، إشارة بن لادن الصغيرة، المنطقة الصناعية 11، الشارقة، الإمارات</strong>.",
           replies: ["فتح في خرائط جوجل", "حجز موعد", "اتصال هاتفي"]
         };
       }
       return {
         text: "حياك الله ومرحباً بك! أنا <strong>تاج بوت (TajBot) 🤖</strong>، مساعدكم الطبي الآلي بعيادة التاج الفضي بالشارقة. كيف يمكنني خدمتك اليوم بخصوص المواعيد أو علاجات البلازما أو استشارات الأطباء؟",
-        replies: ["حجز موعد", "علاجات البلازما (PRP)", "العناية بالجروح", "أسعار الاستشارات", "أوقات الدوام", "واتساب د. بشرى"]
+        replies: ["حجز موعد", "علاجات البلازما (PRP)", "العناية بالجروح", "أسعار الاستشارات", "أوقات الدوام", "واتساب العيادة"]
       };
     }
 
     if (input.includes('stitch') || input.includes('suture') || input.includes('wound') || input.includes('dressing')) {
       return {
         text: "Yes! Dr. Khan Mehmood provides <strong>Sterile Outpatient Wound Care & Minor Stitches (Suturing)</strong>, suture removals, and antiseptic dressings under local anesthesia.",
-        replies: ["Book Wound Care", "Doctor Timings", "Clinic Location", "WhatsApp Dr. Bushra"]
+        replies: ["Book Wound Care", "Doctor Timings", "Clinic Location", "WhatsApp Clinic"]
       };
     }
 
     if (input.includes('prp') || input.includes('hair') || input.includes('face') || input.includes('glow') || input.includes('skin')) {
       return {
         text: "Dr. Bushra Sobia provides certified <strong>Platelet-Rich Plasma (PRP)</strong> therapy:<br>• <strong>PRP Hair Restoration:</strong> AED 450 / session<br>• <strong>Facial PRP Rejuvenation:</strong> AED 500 / session<br>100% natural, biocompatible collagen & hair follicle stimulation.",
-        replies: ["Book PRP Therapy", "WhatsApp Dr. Bushra", "Check Prices", "Clinic Location"]
+        replies: ["Book PRP Therapy", "WhatsApp Clinic", "Check Prices", "Clinic Location"]
       };
     }
 
     if (input.includes('doctor') || input.includes('bushra') || input.includes('khan')) {
       return {
         text: "Our MOH/SHA licensed physicians:<br>• <strong>Dr. Bushra Sobia (Lic. D46336):</strong> General Practice, Aesthetic PRP, Antenatal Checkups.<br>• <strong>Dr. Khan Mehmood (Lic. DI01602):</strong> General Medicine, Urogenital & Men's Health, Outpatient Wound Suturing.",
-        replies: ["Book with Dr. Bushra", "Book with Dr. Khan", "WhatsApp Dr. Bushra", "Clinic Timings"]
+        replies: ["Book with Dr. Bushra", "Book with Dr. Khan", "WhatsApp Clinic", "Clinic Timings"]
       };
     }
 
     if (input.includes('price') || input.includes('cost') || input.includes('fee')) {
       return {
         text: "Our healthcare fees are clear and transparent:<br>• General Consultation: AED 150<br>• PRP Hair Therapy: AED 450<br>• Facial PRP Rejuvenation: AED 500<br>• Urogenital Evaluation: AED 250<br>• Wound Suturing & Dressing: From AED 200",
-        replies: ["Book Appointment", "WhatsApp Dr. Bushra", "Consultation Calculator"]
+        replies: ["Book Appointment", "WhatsApp Clinic", "Consultation Calculator"]
       };
     }
 
     if (input.includes('time') || input.includes('timing') || input.includes('hour') || input.includes('open')) {
       return {
-        text: "Al Taj Alfadhi Clinic is open <strong>7 Days a Week</strong>:<br>• <strong>Saturday – Thursday:</strong> 9:00 AM – 10:00 PM<br>• <strong>Friday:</strong> 2:00 PM – 10:00 PM<br>Walk-ins and booked appointments welcome.",
-        replies: ["Book Consultation", "Get Directions", "Call Clinic"]
+        text: "Al Taj Alfadhi Clinic is open:<br>• <strong>Monday – Saturday:</strong> 09:00 AM – 11:00 PM<br>• <strong>Sunday:</strong> On Call & Appointment<br>Walk-ins and booked appointments welcome.",
+        replies: ["Book Consultation", "Get Directions", "Call (06) 704 4671"]
       };
     }
 
     if (input.includes('book') || input.includes('appointment')) {
       return {
-        text: "You can book your consultation online in under 30 seconds with immediate confirmation, or chat with Dr. Bushra directly on WhatsApp!",
-        replies: ["Go to Booking Page", "WhatsApp Dr. Bushra", "Doctor Timings"]
+        text: "You can book your consultation online in under 30 seconds with immediate confirmation, or chat with our reception directly on WhatsApp 050 96 91 037!",
+        replies: ["Go to Booking Page", "WhatsApp Clinic", "Doctor Timings"]
       };
     }
 
     if (input.includes('whatsapp') || input.includes('call') || input.includes('contact')) {
       return {
-        text: "Reach Dr. Bushra directly:<br>📞 Call: <a href='tel:+97165432190'><strong>+971 6 543 2190</strong></a><br>💬 WhatsApp: <a href='https://wa.me/971509024717?text=Hello%20Dr.%20Bushra%20Sobia,%20I%20would%20like%20to%20inquire%20about%20a%20consultation%20at%20Al%20Taj%20Alfadhi%20Clinic.' target='_blank'><strong>+971 50 902 4717 (Dr. Bushra)</strong></a>",
-        replies: ["WhatsApp Dr. Bushra", "Book Online", "Clinic Timings"]
+        text: "Reach Al Taj Alfadhi Clinic directly:<br>📞 Landline: <a href='tel:+97167044671'><strong>(06) 704 4671</strong></a><br>💬 WhatsApp: <a href='https://wa.me/971509691037' target='_blank'><strong>050 96 91 037</strong></a><br>📍 Location: Al Soussi Bldg, Industrial Area 11, Sharjah",
+        replies: ["WhatsApp Clinic", "Book Online", "Clinic Timings"]
       };
     }
 
     return {
-      text: "Marhaban & Welcome! 🤖 I am <strong>TajBot</strong>, your cute Saudi Sheikh AI medical concierge at Al Taj Alfadhi Clinic. How may I assist you with appointments, PRP aesthetics, or doctor schedules today?",
-      replies: ["Book Appointment", "PRP Hair & Face", "Wound Care & Stitches", "WhatsApp Dr. Bushra", "Clinic Hours & Location"]
+      text: "Marhaban & Welcome! 🤖 I am <strong>TajBot</strong>, your cute medical concierge at Al Taj Alfadhi Clinic. How may I assist you with appointments, PRP aesthetics, or doctor schedules today?",
+      replies: ["Book Appointment", "PRP Hair & Face", "Wound Care & Stitches", "WhatsApp Clinic", "Clinic Hours & Location"]
     };
   };
 
@@ -655,7 +659,7 @@ function initCuteTajBot() {
           window.location.href = "appointment.html";
         }, 1200);
       } else if (userText.includes("WhatsApp") || userText.includes("واتساب")) {
-        window.open("https://wa.me/971509024717?text=Hello%20Dr.%20Bushra%20Sobia,%20I%20would%20like%20to%20inquire%20about%20a%20consultation%20at%20Al%20Taj%20Alfadhi%20Clinic.", "_blank");
+        window.open("https://wa.me/971509691037", "_blank");
       }
     }, 450);
   };
@@ -680,7 +684,7 @@ function updateTajBotGreeting(isArabic) {
   if (greetingTextElem) {
     greetingTextElem.textContent = isArabic 
       ? "حياكم الله ومرحباً! 👋 أنا تاج بوت، هل تود المساعدة في حجز موعد؟"
-      : "Marhaban! 👋 I'm TajBot. Need help booking with Dr. Bushra?";
+      : "Marhaban! 👋 I'm TajBot. Need help booking a consultation?";
   }
 
   const chatBody = document.querySelector('.chat-body');
@@ -695,7 +699,7 @@ function updateTajBotGreeting(isArabic) {
       <div class="chat-msg-wrapper">
         <img src="${TAJBOT_AVATAR_IMAGE}" alt="TajBot" class="bot-bubble-avatar">
         <div class="chat-bubble">
-          حياكم الله وأهلاً وسهلاً بكم! 👋 أنا <strong>تاج بوت (TajBot) 🤖</strong> المساعد الطبي الذكي لعيادة التاج الفضي. يسعدني خدمتكم في حجز المواعيد، جلسات البلازما (PRP) مع الدكتورة بشرى سوبيا، أو الإجابة عن أي استفسار!
+          حياكم الله وأهلاً وسهلاً بكم! 👋 أنا <strong>تاج بوت (TajBot) 🤖</strong> المساعد الطبي الذكي لعيادة التاج الفضي بالشارقة. يسعدني خدمتكم في حجز المواعيد، جلسات البلازما (PRP)، أو الإجابة عن أي استفسار!
         </div>
       </div>
       <div class="chat-quick-replies">
@@ -703,7 +707,7 @@ function updateTajBotGreeting(isArabic) {
         <button type="button" class="chat-quick-btn" data-query="علاجات البلازما (PRP)">علاجات البلازما (PRP)</button>
         <button type="button" class="chat-quick-btn" data-query="العناية بالجروح">العناية بالجروح</button>
         <button type="button" class="chat-quick-btn" data-query="أسعار الاستشارات">أسعار الاستشارات</button>
-        <button type="button" class="chat-quick-btn" data-query="واتساب د. بشرى">واتساب د. بشرى</button>
+        <button type="button" class="chat-quick-btn" data-query="واتساب العيادة">واتساب العيادة</button>
         <button type="button" class="chat-quick-btn" data-query="أوقات الدوام">أوقات الدوام</button>
       </div>
     `;
@@ -712,14 +716,14 @@ function updateTajBotGreeting(isArabic) {
       <div class="chat-msg-wrapper">
         <img src="${TAJBOT_AVATAR_IMAGE}" alt="TajBot" class="bot-bubble-avatar">
         <div class="chat-bubble">
-          Marhaban & Welcome! 👋 I am <strong>TajBot 🤖</strong>, your AI Medical Concierge at Al Taj Alfadhi Clinic. How may I assist you with Dr. Bushra Sobia's consultations, PRP aesthetics, or clinic appointments today?
+          Marhaban & Welcome! 👋 I am <strong>TajBot 🤖</strong>, your AI Medical Concierge at Al Taj Alfadhi Clinic. How may I assist you with doctor consultations, PRP aesthetics, or clinic appointments today?
         </div>
       </div>
       <div class="chat-quick-replies">
         <button type="button" class="chat-quick-btn" data-query="Book Appointment">Book Appointment</button>
         <button type="button" class="chat-quick-btn" data-query="PRP Hair & Face">PRP Hair & Face</button>
         <button type="button" class="chat-quick-btn" data-query="Wound Care & Stitches">Wound Care & Stitches</button>
-        <button type="button" class="chat-quick-btn" data-query="WhatsApp Dr. Bushra">WhatsApp Dr. Bushra</button>
+        <button type="button" class="chat-quick-btn" data-query="WhatsApp Clinic">WhatsApp Clinic</button>
         <button type="button" class="chat-quick-btn" data-query="Clinic Hours & Location">Clinic Hours & Location</button>
       </div>
     `;
@@ -993,8 +997,8 @@ function initAppointmentBooking() {
 
       const whatsappBtn = document.getElementById('modalWhatsAppBtn');
       if (whatsappBtn) {
-        const msg = `Hello Dr. Bushra Sobia & Al Taj Alfadhi Clinic, I have reserved appointment #${refId} for ${name} (${phone}) with ${doctor} on ${date} at ${time} for ${service}. Please confirm my booking.`;
-        whatsappBtn.href = `https://wa.me/971509024717?text=${encodeURIComponent(msg)}`;
+        const msg = `Hello Al Taj Alfadhi Clinic, I have reserved appointment #${refId} for ${name} (${phone}) with ${doctor} on ${date} at ${time} for ${service}. Please confirm my booking.`;
+        whatsappBtn.href = `https://wa.me/971509691037?text=${encodeURIComponent(msg)}`;
       }
 
       bookingForm.reset();

@@ -67,13 +67,13 @@ Al-TajFadhaiClinic-website/
 
 ## 📞 Clinic Contact Information
 
-- **Senior GP & Aesthetic Physician:** Dr. Bushra Sobia
-- **Direct WhatsApp & Mobile:** [`+971 50 902 4717`](https://wa.me/971509024717)
-- **Clinic Landline:** `+971 6 543 2190`
-- **Location:** King Faisal Street, Al Majaz, Sharjah, UAE
+- **Landline Reception:** [`(06) 704 4671`](tel:+97167044671) / `+971 6 704 4671`
+- **WhatsApp Support & Bookings:** [`050 96 91 037`](https://wa.me/971509691037) / `+971 50 969 1037`
+- **Official Email:** `info.altajalfadhiclinic@gmail.com`
+- **Location:** Al Soussi Building, Small Bin Ladin Signal, Industrial Area 11, Sharjah, UAE
 - **Working Hours:**
-  - Saturday – Thursday: 9:00 AM – 10:00 PM
-  - Friday: 2:00 PM – 10:00 PM
+  - Monday – Saturday: 09:00 AM – 11:00 PM
+  - Sunday: On Call & Appointment
 
 ---
 

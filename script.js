@@ -264,7 +264,8 @@ const DICTIONARY_AR = {
   "Patient Full Name *": "اسم المريض بالكامل *",
   "Enter your full name": "أدخل اسمك الكامل",
   "Mobile Phone Number (WhatsApp) *": "رقم الهاتف المحمول (واتساب) *",
-  "e.g. +971 50 902 4717": "مثال: 971509024717+",
+  "e.g. +971 50 969 1037": "مثال: 971509691037+",
+  "e.g. 050 96 91 037": "مثال: 0509691037",
   "Email Address (Optional)": "البريد الإلكتروني (اختياري)",
   "Preferred Doctor": "الطبيب المفضل",
   "No Preference / First Available": "بدون تفضيل / أول طبيب متاح",
@@ -294,12 +295,15 @@ const DICTIONARY_AR = {
 
   // Location & Hours
   "Clinic Location & Visiting Details": "موقع العيادة ومعلومات الزيارة",
-  "Easily Accessible in the Heart of Al Majaz, Sharjah": "موقع متميز وسهل الوصول في قلب المجاز بالشارقة",
+  "Easily Accessible in Industrial Area 11, Sharjah": "موقع متميز وسهل الوصول في المنطقة الصناعية 11 بالشارقة",
   "Clinic Address": "عنوان العيادة",
-  "King Faisal Street, Al Majaz, Sharjah, United Arab Emirates": "شارع الملك فيصل، منطقة المجاز، الشارقة، الإمارات العربية المتحدة",
+  "Al Soussi Building, Small Bin Ladin Signal, Industrial Area 11, Sharjah, UAE": "بناية السوسي، إشارة بن لادن الصغيرة، المنطقة الصناعية 11، الشارقة، الإمارات",
+  "King Faisal Street, Al Majaz, Sharjah, United Arab Emirates": "بناية السوسي، إشارة بن لادن الصغيرة، المنطقة الصناعية 11، الشارقة، الإمارات العربية المتحدة",
   "Working Hours": "أوقات وساعات العمل",
-  "Saturday – Thursday: 9:00 AM – 10:00 PM": "السبت – الخميس: 9:00 صباحاً – 10:00 مساءً",
-  "Friday: 2:00 PM – 10:00 PM": "الجمعة: 2:00 ظهراً – 10:00 مساءً",
+  "Monday – Saturday: 09:00 AM – 11:00 PM": "الإثنين – السبت: 9:00 صباحاً – 11:00 مساءً",
+  "Sunday: On Call & Appointment": "الأحد: تحت الطلب والمواعيد المسبقة",
+  "Saturday – Thursday: 9:00 AM – 10:00 PM": "الإثنين – السبت: 9:00 صباحاً – 11:00 مساءً",
+  "Friday: 2:00 PM – 10:00 PM": "الجمعة: 9:00 صباحاً – 11:00 مساءً",
   "Direct Phone": "هاتف العيادة المباشر",
   "WhatsApp Booking": "حجز مباشر عبر الواتساب",
   "Get Driving Directions": "الحصول على اتجاهات القيادة",
@@ -612,28 +616,28 @@ function initCuteTajBot() {
 
     if (input.includes('time') || input.includes('timing') || input.includes('hour') || input.includes('open')) {
       return {
-        text: "Al Taj Alfadhi Clinic is open <strong>7 Days a Week</strong>:<br>• <strong>Saturday – Thursday:</strong> 9:00 AM – 10:00 PM<br>• <strong>Friday:</strong> 2:00 PM – 10:00 PM<br>Walk-ins and booked appointments welcome.",
-        replies: ["Book Consultation", "Get Directions", "Call Clinic"]
+        text: "Al Taj Alfadhi Clinic is open:<br>• <strong>Monday – Saturday:</strong> 09:00 AM – 11:00 PM<br>• <strong>Sunday:</strong> On Call & Appointment<br>Walk-ins and booked appointments welcome.",
+        replies: ["Book Consultation", "Get Directions", "Call (06) 704 4671"]
       };
     }
 
     if (input.includes('book') || input.includes('appointment')) {
       return {
-        text: "You can book your consultation online in under 30 seconds with immediate confirmation, or chat with Dr. Bushra directly on WhatsApp!",
-        replies: ["Go to Booking Page", "WhatsApp Dr. Bushra", "Doctor Timings"]
+        text: "You can book your consultation online in under 30 seconds with immediate confirmation, or chat with our reception directly on WhatsApp 050 96 91 037!",
+        replies: ["Go to Booking Page", "WhatsApp Clinic", "Doctor Timings"]
       };
     }
 
     if (input.includes('whatsapp') || input.includes('call') || input.includes('contact')) {
       return {
-        text: "Reach Dr. Bushra directly:<br>📞 Call: <a href='tel:+97165432190'><strong>+971 6 543 2190</strong></a><br>💬 WhatsApp: <a href='https://wa.me/971509024717?text=Hello%20Dr.%20Bushra%20Sobia,%20I%20would%20like%20to%20inquire%20about%20a%20consultation%20at%20Al%20Taj%20Alfadhi%20Clinic.' target='_blank'><strong>+971 50 902 4717 (Dr. Bushra)</strong></a>",
-        replies: ["WhatsApp Dr. Bushra", "Book Online", "Clinic Timings"]
+        text: "Reach Al Taj Alfadhi Clinic directly:<br>📞 Landline: <a href='tel:+97167044671'><strong>(06) 704 4671</strong></a><br>💬 WhatsApp: <a href='https://wa.me/971509691037' target='_blank'><strong>050 96 91 037</strong></a><br>📍 Location: Al Soussi Bldg, Industrial Area 11, Sharjah",
+        replies: ["WhatsApp Clinic", "Book Online", "Clinic Timings"]
       };
     }
 
     return {
-      text: "Marhaban & Welcome! 🤖 I am <strong>TajBot</strong>, your cute Saudi Sheikh AI medical concierge at Al Taj Alfadhi Clinic. How may I assist you with appointments, PRP aesthetics, or doctor schedules today?",
-      replies: ["Book Appointment", "PRP Hair & Face", "Wound Care & Stitches", "WhatsApp Dr. Bushra", "Clinic Hours & Location"]
+      text: "Marhaban & Welcome! 🤖 I am <strong>TajBot</strong>, your cute medical concierge at Al Taj Alfadhi Clinic. How may I assist you with appointments, PRP aesthetics, or doctor schedules today?",
+      replies: ["Book Appointment", "PRP Hair & Face", "Wound Care & Stitches", "WhatsApp Clinic", "Clinic Hours & Location"]
     };
   };
 
@@ -655,7 +659,7 @@ function initCuteTajBot() {
           window.location.href = "appointment.html";
         }, 1200);
       } else if (userText.includes("WhatsApp") || userText.includes("واتساب")) {
-        window.open("https://wa.me/971509024717?text=Hello%20Dr.%20Bushra%20Sobia,%20I%20would%20like%20to%20inquire%20about%20a%20consultation%20at%20Al%20Taj%20Alfadhi%20Clinic.", "_blank");
+        window.open("https://wa.me/971509691037", "_blank");
       }
     }, 450);
   };
@@ -993,8 +997,8 @@ function initAppointmentBooking() {
 
       const whatsappBtn = document.getElementById('modalWhatsAppBtn');
       if (whatsappBtn) {
-        const msg = `Hello Dr. Bushra Sobia & Al Taj Alfadhi Clinic, I have reserved appointment #${refId} for ${name} (${phone}) with ${doctor} on ${date} at ${time} for ${service}. Please confirm my booking.`;
-        whatsappBtn.href = `https://wa.me/971509024717?text=${encodeURIComponent(msg)}`;
+        const msg = `Hello Al Taj Alfadhi Clinic, I have reserved appointment #${refId} for ${name} (${phone}) with ${doctor} on ${date} at ${time} for ${service}. Please confirm my booking.`;
+        whatsappBtn.href = `https://wa.me/971509691037?text=${encodeURIComponent(msg)}`;
       }
 
       bookingForm.reset();

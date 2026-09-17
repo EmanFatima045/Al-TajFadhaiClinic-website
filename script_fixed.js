@@ -123,7 +123,7 @@ const DICTIONARY_AR = {
   "Patient Full Name *": "اسم المريض بالكامل *",
   "Enter your full name": "أدخل اسمك الكامل",
   "Mobile Phone Number (WhatsApp) *": "رقم الهاتف المحمول (واتساب) *",
-  "e.g. +971 50 902 4717": "مثال: 971509024717+",
+  "e.g. +971 50 969 1037": "مثال: 971509691037+",
   "Email Address (Optional)": "البريد الإلكتروني (اختياري)",
   "Preferred Doctor": "الطبيب المفضل",
   "No Preference / First Available": "بدون تفضيل / أول طبيب متاح",
@@ -371,7 +371,7 @@ function initCuteTajBot() {
       if (input.includes('location') || input.includes('address') || input.includes('where') || input.includes('map') || input.includes('majaz') || input.includes('sharjah')) {
         return {
           text: "We are located on <strong>King Faisal Street, Al Majaz, Sharjah, UAE</strong>. Easy access from both Sharjah and Dubai with convenient parking.",
-          replies: ["Open Google Maps", "Book Appointment", "Call +971 6 543 2190"]
+          replies: ["Open Google Maps", "Book Appointment", "Call (06) 704 4671"]
         };
       }
       if (input.includes('stitch') || input.includes('wound') || input.includes('burn') || input.includes('trauma') || input.includes('suture')) {
@@ -405,7 +405,7 @@ function initCuteTajBot() {
         if (bookSection) bookSection.scrollIntoView({ behavior: 'smooth' });
       }
       if (userText.includes("Call Clinic") || userText.includes("اتصال بالعيادة")) {
-        window.location.href = "tel:+97165432190";
+        window.location.href = "tel:+97167044671";
       }
     }, 600);
   };
@@ -678,7 +678,7 @@ function initAppointmentBooking() {
     const whatsappDirectBtn = document.getElementById('confirmViaWhatsAppBtn');
     if (whatsappDirectBtn) {
       const msg = `Hello Al Taj Alfadhi Clinic, I have reserved appointment #${refId} for ${name} (${phone}) with ${doctor} on ${date} at ${time} for ${service}. Please confirm my booking.`;
-      whatsappDirectBtn.href = `https://wa.me/971509024717?text=${encodeURIComponent(msg)}`;
+      whatsappDirectBtn.href = `https://wa.me/971509691037?text=${encodeURIComponent(msg)}`;
     }
 
     form.reset();
