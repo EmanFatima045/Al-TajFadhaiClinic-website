@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAppointmentBooking();
   initFaqAccordion();
   initCuteTajBot();
+  initHeroQuickSearch();
 });
 
 /* --------------------------------------------------------------------------
@@ -1033,5 +1034,41 @@ function initFaqAccordion() {
         item.classList.add('open');
       }
     });
+  });
+}
+
+/* --------------------------------------------------------------------------
+   10. Inspo Hero Quick Consultation Search & Filter
+   -------------------------------------------------------------------------- */
+function initHeroQuickSearch() {
+  const searchBtn = document.getElementById('heroQuickSearchBtn');
+  const serviceSelect = document.getElementById('heroQuickService');
+  const doctorSelect = document.getElementById('heroQuickDoctor');
+
+  if (!searchBtn) return;
+
+  searchBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const serviceVal = serviceSelect ? serviceSelect.value : '';
+    const doctorVal = doctorSelect ? doctorSelect.value : '';
+
+    // If booking form exists on this page, pre-fill and scroll
+    const bookForm = document.getElementById('appointmentForm');
+    const appointmentSection = document.getElementById('appointment-booking-section') || document.querySelector('.appointment-section');
+    
+    if (bookForm && appointmentSection) {
+      const formService = document.getElementById('appointmentService');
+      const formDoctor = document.getElementById('appointmentDoctor');
+      if (formService && serviceVal) formService.value = serviceVal;
+      if (formDoctor && doctorVal) formDoctor.value = doctorVal;
+      appointmentSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Navigate to appointment page with query params
+      const query = new URLSearchParams({
+        service: serviceVal,
+        doctor: doctorVal
+      }).toString();
+      window.location.href = `appointment.html?${query}`;
+    }
   });
 }
