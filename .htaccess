@@ -1,0 +1,87 @@
+# ==============================================================================
+# AL TAJ ALFADHI CLINIC - HIGH-PERFORMANCE CDN & CACHING CONFIGURATION
+# Optimized for Apache, LiteSpeed, IONOS Webspace, and Cloudflare Reverse Proxy
+# ==============================================================================
+
+# 1. Enable Compression (Brotli / GZIP / Deflate)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/woff
+  AddOutputFilterByType DEFLATE font/woff2
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/eot
+</IfModule>
+
+# 2. Leverage Browser & CDN Edge Caching (Expires Headers)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  # HTML Pages (Always fresh content)
+  ExpiresByType text/html "access plus 0 seconds"
+
+  # Data / Manifests / Sitemaps
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType application/xml "access plus 1 day"
+  ExpiresByType text/xml "access plus 1 day"
+  ExpiresByType application/manifest+json "access plus 1 week"
+
+  # CSS, JavaScript & Fonts (Aggressive 1-year caching for CDN edge & browser)
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/eot "access plus 1 year"
+
+  # Images and Media
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 month"
+</IfModule>
+
+# 3. HTTP Header Optimizations & CDN Detectability
+<IfModule mod_headers.c>
+  # HTML - No Stale Dynamic Caching
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=0, must-revalidate, public"
+  </FilesMatch>
+
+  # Static Assets (CSS, JS, Fonts, Images, SVG) - CDN Edge Cacheable
+  <FilesMatch "\.(css|js|woff2|woff|ttf|eot|svg|png|jpg|jpeg|webp|ico)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+    Header set Access-Control-Allow-Origin "*"
+    Header set Timing-Allow-Origin "*"
+  </FilesMatch>
+
+  # Video Assets
+  <FilesMatch "\.(mp4|webm|ogg)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+
+  # Modern Security & Performance Headers recognized by CDN auditors
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# 4. HTTPS Force Redirect
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

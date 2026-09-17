@@ -1,0 +1,43 @@
+# Cloudflare / Netlify / Edge CDN Response Headers
+
+# Global Security & CDN Visibility
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Timing-Allow-Origin: *
+
+# HTML Files (Always fresh, zero-delay updates)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# CSS & JavaScript (High-speed CDN Cache with 1 year TTL)
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images & Vector SVG Favicons
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+# Web Fonts
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Video Assets
+/assests/*.mp4
+  Cache-Control: public, max-age=2592000
