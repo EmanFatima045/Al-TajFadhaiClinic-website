@@ -204,7 +204,15 @@
        3. Hero Section (Quiet Luxury Healthcare)
        ======================================================================== -->
   <section class="hero-section">
-    <div class="container">
+    <!-- Ambient Luxury Video Background -->
+    <div class="hero-video-bg-container" aria-hidden="true">
+      <video class="hero-video-bg-media" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1920&q=80">
+        <source src="assests/https_wwwaltajalfadhiclinic.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <div class="container relative-z">
       <div class="hero-grid">
         <!-- Left Hero Content -->
         <div>
@@ -268,15 +276,18 @@
           </div>
         </div>
 
-        <!-- Right Hero Media -->
+        <!-- Right Hero Media: Clinic Video Feature Player -->
         <div class="hero-media-card">
-          <div class="hero-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" alt="Al Taj Alfadhi Clinic Consultation Room Sharjah" class="hero-image">
+          <div class="hero-image-wrapper hero-video-wrapper">
+            <video class="hero-feature-video hero-image" autoplay muted loop playsinline controls poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80">
+              <source src="assests/https_wwwaltajalfadhiclinic.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             <div class="hero-floating-badge">
               <span class="badge-pulse"></span>
               <div>
-                <div class="floating-badge-title">Consultations Available Today</div>
-                <div class="floating-badge-subtitle">Same-Day Walk-ins & Appointments</div>
+                <div class="floating-badge-title">Official Clinic Video Tour</div>
+                <div class="floating-badge-subtitle">Al Taj Al Fadhi • King Faisal St, Sharjah</div>
               </div>
             </div>
           </div>

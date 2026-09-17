@@ -74,6 +74,8 @@ const DICTIONARY_AR = {
   "King Faisal St, Al Majaz": "شارع الملك فيصل، المجاز",
   "Consultations Available Today": "استشارات متاحة اليوم",
   "Same-Day Walk-ins & Appointments": "استقبال في نفس اليوم ومواعيد مسبقة",
+  "Official Clinic Video Tour": "جولة فيديو رسمية في العيادة",
+  "Al Taj Al Fadhi • King Faisal St, Sharjah": "عيادة التاج الفضي • شارع الملك فيصل، الشارقة",
 
   // Section Headers & Subtitles
   "Our Clinical Specialties": "تخصصاتنا السريرية والطبية",
