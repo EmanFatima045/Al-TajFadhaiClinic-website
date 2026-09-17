@@ -1,0 +1,24 @@
+{
+  "name": "Al Taj Alfadhi Medical Clinic",
+  "short_name": "Al Taj Clinic",
+  "description": "Premium Licensed Medical Clinic & Aesthetic PRP Care in Sharjah, UAE",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#9B0D17",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-touch-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

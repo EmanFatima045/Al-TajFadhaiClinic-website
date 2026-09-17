@@ -45,17 +45,22 @@ A modern, high-conversion medical website designed for **Al Taj Alfadhi Clinic**
 
 ```
 Al-TajFadhaiClinic-website/
-├── index.html              # Homepage (Hero, Trust Badges, Services, Doctors, Booking, Reviews, FAQ)
+├── index.html              # Homepage (Hero Video, Trust Badges, Services, Doctors, Booking, Reviews, FAQ)
 ├── about.html              # About Clinic, Accreditation (MOH & SHA), Values & Facility Tour
 ├── services.html           # Detailed Medical Services & Interactive Filter Tabs
 ├── doctors.html            # Verified Medical Team & Dr. Bushra Sobia Profile
 ├── contact.html            # Location Map, Contact Numbers, Operating Hours & Inquiry Form
 ├── appointment.html        # Dedicated Online Consultation Booking System
+├── favicon.svg             # High-Resolution Vector Favicon (Gold & Burgundy Crown Emblem)
+├── apple-touch-icon.svg    # Mobile Homescreen Touch Icon for iOS & Android Bookmarks
+├── site.webmanifest        # Progressive Web App (PWA) Manifest for Mobile Bookmarks
+├── sitemap.xml             # XML Sitemap with Hreflang Tags for Google/Bing Indexing
+├── robots.txt              # Search Engine Crawler Directives & Sitemap Reference
 ├── style.css               # Luxury Design System, Theme Tokens & Responsive Breakpoints
 ├── app.js                  # Core Application Engine (TajBot, Translation, Booking, Calculator)
 ├── script.js               # Synchronized Standalone Production Script
 ├── tajbot-sheikh.svg       # Custom Vector Asset of TajBot in Saudi Sheikh Attire
-└── README.md               # Project Documentation
+└── README.md               # Project Documentation & CDN Setup Guide
 ```
 
 ---
@@ -94,6 +99,28 @@ Al-TajFadhaiClinic-website/
 3. Navigate to **Settings** → **Pages**.
 4. Under **Branch**, select `main` and root `/`, then click **Save**.
 5. Your website will be live at: `https://emanfatima045.github.io/Al-TajFadhaiClinic-website/`
+
+---
+
+## ⚡ Content Delivery Network (CDN) & SEO Setup
+
+### 1. Activating CDN on IONOS
+If you are hosting this website via **IONOS**:
+1. Log in to your [IONOS Control Center](https://www.ionos.com/).
+2. Navigate to **Websites & Shops** → Select your domain `altajalfadhiclinic.ae`.
+3. In the domain settings, click **Performance & Security** → Select **CDN (Content Delivery Network)**.
+4. Turn ON **Web Optimizer & Global Caching** as per the [IONOS CDN Guide](https://www.ionos.com/help//index.php?id=547).
+
+### 2. Built-in CDN Preconnects
+All HTML files automatically include pre-connected global CDNs for lightning-fast asset loading:
+- **Google Fonts CDN:** Pre-warmed connection to `https://fonts.googleapis.com` and `https://fonts.gstatic.com`.
+- **Unsplash CDN:** Global image delivery via `https://images.unsplash.com`.
+- **Cloudflare CDN:** Fast edge caching via `https://cdnjs.cloudflare.com`.
+
+### 3. SEO Sitemap & Favicons
+- **Sitemap:** Search engine XML sitemap ready at [`sitemap.xml`](file:///c:/Users/Dr%20Bia/Desktop/Al-TajFadhaiClinic-website/sitemap.xml).
+- **Robots Directive:** [`robots.txt`](file:///c:/Users/Dr%20Bia/Desktop/Al-TajFadhaiClinic-website/robots.txt) auto-indexes all clinical pages and links directly to the sitemap.
+- **Favicon & Apple Touch Icon:** Custom crown emblem vector (`favicon.svg`, `apple-touch-icon.svg`) and PWA webmanifest (`site.webmanifest`).
 
 ---
 
