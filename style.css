@@ -229,8 +229,9 @@ section {
 }
 
 .section-dark .section-title,
-.section-burgundy-warm .section-title {
-  color: var(--color-white);
+.section-burgundy-warm .section-title,
+.calculator-section .section-title {
+  color: var(--color-white) !important;
 }
 
 .section-subtitle {
@@ -239,8 +240,10 @@ section {
   line-height: 1.7;
 }
 
-.section-dark .section-subtitle {
-  color: #DDD4C8;
+.section-dark .section-subtitle,
+.section-burgundy-warm .section-subtitle,
+.calculator-section .section-subtitle {
+  color: #DDD4C8 !important;
 }
 
 .accent-burgundy {
