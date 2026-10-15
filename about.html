@@ -20,7 +20,7 @@
   <link rel="manifest" href="site.webmanifest?v=20261004">
   <meta name="theme-color" content="#9B0D17">
 
-  <link rel="stylesheet" href="style.css?v=20261016-1">
+  <link rel="stylesheet" href="style.css?v=20261016-9">
 </head>
 <body>
 
@@ -138,7 +138,13 @@
   </aside>
 
   <!-- Page Hero Banner -->
-  <section class="page-hero">
+  <section class="page-hero page-hero--video">
+    <div class="page-hero-media" aria-hidden="true">
+      <video class="page-hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="assests/gemini_generated_video_ba7a7b59.mp4" type="video/mp4">
+      </video>
+      <div class="page-hero-video-overlay"></div>
+    </div>
     <div class="page-hero-inner">
       <div class="breadcrumb-trail">
         <a href="index.html">Home</a>
@@ -178,7 +184,7 @@
               </div>
               <div style="background: var(--color-bg-page); border: 1px solid var(--color-taupe-border); border-radius: var(--radius-sm); padding: 18px;">
                 <div style="font-family: var(--font-serif); font-size: 1.1rem; font-weight: 700; color: var(--color-black); margin-bottom: 6px;">Zero Hidden Fees</div>
-                <div style="font-size: 0.84rem; color: var(--color-text-muted);">Transparent consultation fees from AED 150.</div>
+                <div style="font-size: 0.84rem; color: var(--color-text-muted);">Transparent general consultation fee of AED 30.</div>
               </div>
             </div>
           </div>
@@ -195,6 +201,60 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Executive Leadership -->
+    <section class="section-cream executive-leadership-section" id="executive-leadership">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge badge-taupe">Clinic Leadership</span>
+          <h2 class="section-title">Founder &amp; <span class="accent-burgundy">Executive Leadership</span></h2>
+          <p class="section-subtitle">The people guiding our medical standards, clinic operations, and patient-first
+            vision.</p>
+        </div>
+
+        <article class="executive-profile-card executive-profile-card-founder reveal-on-scroll">
+          <div class="executive-profile-media executive-profile-media-founder">
+            <img src="assests/DR%20Bushra%20Sobia%20owner%20of%20clinic.jpeg"
+              alt="Dr. Bushra Sobia, founder and owner of Al Taj Alfadhi Clinic" width="3120" height="4160"
+              loading="lazy" decoding="async">
+            <span class="executive-role-badge">Founder &amp; Clinic Owner</span>
+          </div>
+          <div class="executive-profile-content">
+            <span class="executive-eyebrow">Meet the Founder</span>
+            <h2>Dr. Bushra Sobia</h2>
+            <p class="executive-role">Founder, Clinic Owner &amp; Medical Lead</p>
+            <p>Dr. Bushra Sobia founded Al Taj Alfadhi Clinic with a commitment to accessible, ethical healthcare and
+              attentive consultations delivered in a professional, compassionate environment.</p>
+            <div class="executive-values" aria-label="Founder focus areas">
+              <span>Medical Leadership</span>
+              <span>Compassionate Care</span>
+              <span>Clinical Integrity</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="executive-profile-card reveal-on-scroll">
+          <div class="executive-profile-media executive-profile-media-ceo">
+            <img src="assests/Ceo%20ABdul%20Ahad%202.jpeg"
+              alt="Mian Abdul Ahad, CEO of Al Taj Alfadhi Clinic" width="720" height="1280" loading="lazy"
+              decoding="async">
+            <span class="executive-role-badge">Chief Executive Officer</span>
+          </div>
+          <div class="executive-profile-content">
+            <span class="executive-eyebrow">Executive Leadership</span>
+            <h2>Mian Abdul Ahad</h2>
+            <p class="executive-role">CEO · Al Taj Alfadhi Clinic</p>
+            <p>As Chief Executive Officer, Mian Abdul Ahad provides strategic leadership for the clinic, supporting
+              efficient operations, service quality, and a patient-centered experience.</p>
+            <div class="executive-values" aria-label="Leadership focus areas">
+              <span>Strategic Leadership</span>
+              <span>Clinic Operations</span>
+              <span>Patient Experience</span>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -416,6 +476,6 @@
   </a>
 
   <!-- Script File -->
-  <script src="app.js?v=20261016-1"></script>
+  <script src="app.js?v=20261016-3"></script>
 </body>
 </html>

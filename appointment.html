@@ -20,7 +20,7 @@
   <link rel="manifest" href="site.webmanifest?v=20261004">
   <meta name="theme-color" content="#9B0D17">
 
-  <link rel="stylesheet" href="style.css?v=20261016-1">
+  <link rel="stylesheet" href="style.css?v=20261016-6">
 </head>
 <body>
 
@@ -138,7 +138,13 @@
   </aside>
 
   <!-- Page Hero Banner -->
-  <section class="page-hero">
+  <section class="page-hero page-hero--video">
+    <div class="page-hero-media" aria-hidden="true">
+      <video class="page-hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="assests/gemini_generated_video_ba7a7b59.mp4" type="video/mp4">
+      </video>
+      <div class="page-hero-video-overlay"></div>
+    </div>
     <div class="page-hero-inner">
       <div class="breadcrumb-trail">
         <a href="index.html">Home</a>
@@ -179,7 +185,7 @@
                   <label for="bookingService" class="form-label">Medical Service *</label>
                   <select id="bookingService" class="form-control" required>
                     <option value="">-- Select Treatment --</option>
-                    <option value="General Physician Consultation">General Physician Consultation (AED 150)</option>
+                    <option value="General Physician Consultation">General Physician Consultation (AED 30)</option>
                     <option value="PRP Hair Loss Therapy">PRP Hair Loss Therapy (AED 450)</option>
                     <option value="PRP Facial Rejuvenation">PRP Facial Vampire Glow (AED 500)</option>
                     <option value="Urinary Health Consultation">Urinary Health Consultation (AED 250)</option>
@@ -439,6 +445,6 @@
   </a>
 
   <!-- Script File -->
-  <script src="app.js?v=20261016-1"></script>
+  <script src="app.js?v=20261016-3"></script>
 </body>
 </html>

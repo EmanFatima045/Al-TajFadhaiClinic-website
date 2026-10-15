@@ -149,17 +149,17 @@ const DICTIONARY_AR = {
   "We are conveniently located on King Faisal Street, Al Majaz, Sharjah — with easy access from both Sharjah and Dubai. Dedicated patient parking is available nearby.": "تقع العيادة في موقع متميز وسهل الوصول في شارع الملك فيصل، منطقة المجاز، الشارقة — بالقرب من دبي ومع توفر مواقف سيارات قريبة.",
 
   // Pricing & Badges
-  "AED 150": "150 درهم",
+  "AED 30": "30 درهم",
   "AED 450": "450 درهم",
   "AED 500": "500 درهم",
   "AED 250": "250 درهم",
   "AED 180": "180 درهم",
-  "Fee: AED 150": "الرسوم: 150 درهم",
+  "Fee: AED 30": "الرسوم: 30 درهم",
   "Fee: AED 450": "الرسوم: 450 درهم",
   "Fee: AED 500": "الرسوم: 500 درهم",
   "Fee: AED 250": "الرسوم: 250 درهم",
   "Fee: AED 180": "الرسوم: 180 درهم",
-  "From AED 150": "تبدأ من 150 درهم",
+  "From AED 30": "تبدأ من 30 درهم",
   "From AED 200": "تبدأ من 200 درهم",
   "From AED 250": "تبدأ من 250 درهم",
   "AED 450 / Session": "450 درهم / الجلسة",
@@ -323,7 +323,7 @@ function initCuteTajBot() {
       }
       if (input.includes('سعر') || input.includes('اسعار') || input.includes('رسوم') || input.includes('تكلفة') || input.includes('درهم')) {
         return {
-          text: "أسعارنا شفافة ومناسبة:<br>• استشارة طب عام: 150 درهم<br>• بلازما الشعر: 450 درهم<br>• بلازما الوجه: 500 درهم<br>• استشارة الذكورة والمسالك: 250 درهم<br>• خياطة وغيار الجروح: تبدأ من 200 درهم",
+          text: "أسعارنا شفافة ومناسبة:<br>• استشارة طب عام: 30 درهم<br>• بلازما الشعر: 450 درهم<br>• بلازما الوجه: 500 درهم<br>• استشارة الذكورة والمسالك: 250 درهم<br>• خياطة وغيار الجروح: تبدأ من 200 درهم",
           replies: ["حساب التكلفة بالتفصيل", "حجز موعد الآن"]
         };
       }
@@ -358,7 +358,7 @@ function initCuteTajBot() {
       }
       if (input.includes('price') || input.includes('cost') || input.includes('fee') || input.includes('aed') || input.includes('rate')) {
         return {
-          text: "Our healthcare fees are clear and transparent:<br>• General Consultation: AED 150<br>• PRP Hair Therapy: AED 450<br>• Facial PRP Rejuvenation: AED 500<br>• Urogenital Evaluation: AED 250<br>• Wound Suturing & Dressing: From AED 200",
+          text: "Our healthcare fees are clear and transparent:<br>• General Consultation: AED 30<br>• PRP Hair Therapy: AED 450<br>• Facial PRP Rejuvenation: AED 500<br>• Urogenital Evaluation: AED 250<br>• Wound Suturing & Dressing: From AED 200",
           replies: ["Calculate Total Cost", "Book Consultation Now"]
         };
       }
@@ -602,7 +602,7 @@ function initConsultationCalculator() {
 
   if (!serviceBtns.length || !totalPriceElem) return;
 
-  let selectedService = { name: 'General Practice Consultation', price: 150 };
+  let selectedService = { name: 'General Practice Consultation', price: 30 };
   let doctorFee = 0;
 
   const updateSummary = () => {

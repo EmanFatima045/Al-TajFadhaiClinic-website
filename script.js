@@ -126,12 +126,12 @@ const DICTIONARY_AR = {
   "Dr. Bushra Sobia": "الدكتورة بشرى سوبيا",
 
   // Pricing Strings
-  "From AED 150": "تبدأ من 150 درهم",
+  "AED 30": "30 درهم",
   "From AED 200": "تبدأ من 200 درهم",
   "From AED 250": "تبدأ من 250 درهم",
   "AED 450 / Session": "450 درهم / الجلسة",
   "AED 500 / Session": "500 درهم / الجلسة",
-  "Fee: AED 150": "الرسوم: 150 درهم",
+  "Fee: AED 30": "الرسوم: 30 درهم",
   "Fee: AED 200": "الرسوم: 200 درهم",
   "Fee: AED 250": "الرسوم: 250 درهم",
   "Fee: AED 450": "الرسوم: 450 درهم",
@@ -219,7 +219,7 @@ const DICTIONARY_AR = {
   "1. Select Medical Service": "1. اختر الخدمة الطبية",
   "2. Select Medical Doctor": "2. اختر الطبيب المعالج",
   "3. Estimated Fee Summary": "3. ملخص الرسوم التقديرية",
-  "General Consultation (AED 150)": "استشارة طب عام (150 درهم)",
+  "General Consultation (AED 30)": "استشارة طب عام (30 درهم)",
   "PRP Hair Therapy (AED 450)": "علاج الشعر بالبلازما (450 درهم)",
   "PRP Vampire Face (AED 500)": "بلازما نضارة الوجه (500 درهم)",
   "Minor Stitches & Dressing (AED 200)": "خياطة الجروح والغيار (200 درهم)",
@@ -549,7 +549,7 @@ function initCuteTajBot() {
       }
       if (input.includes('سعر') || input.includes('أسعار') || input.includes('تكلفة') || input.includes('كم')) {
         return {
-          text: "أسعار عيادة التاج الفضي شفافة وبدون رسوم خفية:<br>• استشارة طب عام: 150 درهم<br>• بلازما الشعر: 450 درهم<br>• بلازما الوجه: 500 درهم<br>• استشارة الذكورة والمسالك: 250 درهم<br>• خياطة وغيار الجروح: تبدأ من 200 درهم",
+          text: "أسعار عيادة التاج الفضي شفافة وبدون رسوم خفية:<br>• استشارة طب عام: 30 درهم<br>• بلازما الشعر: 450 درهم<br>• بلازما الوجه: 500 درهم<br>• استشارة الذكورة والمسالك: 250 درهم<br>• خياطة وغيار الجروح: تبدأ من 200 درهم",
           replies: ["حجز استشارة", "واتساب د. بشرى", "حاسبة التكلفة"]
         };
       }
@@ -594,7 +594,7 @@ function initCuteTajBot() {
 
     if (input.includes('price') || input.includes('cost') || input.includes('fee')) {
       return {
-        text: "Our healthcare fees are clear and transparent:<br>• General Consultation: AED 150<br>• PRP Hair Therapy: AED 450<br>• Facial PRP Rejuvenation: AED 500<br>• Urogenital Evaluation: AED 250<br>• Wound Suturing & Dressing: From AED 200",
+        text: "Our healthcare fees are clear and transparent:<br>• General Consultation: AED 30<br>• PRP Hair Therapy: AED 450<br>• Facial PRP Rejuvenation: AED 500<br>• Urogenital Evaluation: AED 250<br>• Wound Suturing & Dressing: From AED 200",
         replies: ["Book Appointment", "WhatsApp Dr. Bushra", "Consultation Calculator"]
       };
     }
@@ -847,7 +847,7 @@ function initConsultationCalculator() {
 
   let selectedService = {
     name: 'General Physician Consultation',
-    price: 150
+    price: 30
   };
 
   let doctorFee = 0;
