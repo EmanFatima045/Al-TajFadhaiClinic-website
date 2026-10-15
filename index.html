@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO & Local Business Meta Tags -->
-  <title>Al Taj Alfadhi Clinic | Medical & Aesthetic Clinic in Sharjah, UAE</title>
+  <title>Al Taj Alfadhi Clinic | Premium Medical & Aesthetic Care in Sharjah</title>
   <meta name="description"
     content="Al Taj Alfadhi Clinic is a premier medical clinic in Al Majaz, Sharjah, serving patients from Sharjah & Dubai. Licensed doctors offering General Medicine, PRP Treatments, Outpatient Wound Care, and Urogenital Health.">
   <meta name="keywords"
@@ -16,11 +16,11 @@
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Al Taj Alfadhi Clinic | Medical & Aesthetic Clinic in Sharjah, UAE">
+  <meta property="og:title" content="Al Taj Alfadhi Clinic | Premium Medical & Aesthetic Care in Sharjah">
   <meta property="og:description"
     content="Expert Care. Personal Attention. Better Well-Being. Licensed medical and aesthetic healthcare in Al Majaz, Sharjah.">
   <meta property="og:image"
-    content="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1200&q=80">
+    content="https://altajfadhaiclinic.ae/assests/Al%20Taj%20Fadhai%20Clinic%20PIc.jpeg">
   <meta property="og:url" content="https://altajfadhaiclinic.ae/">
 
   <!-- Global CDN Preconnect & Performance Optimizations -->
@@ -30,16 +30,21 @@
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
   <!-- Favicon & Mobile Touch Icons -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.svg">
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon-al-taj.png?v=20261004">
+  <link rel="shortcut icon" type="image/png" href="favicon-al-taj.png?v=20261004">
+  <link rel="apple-touch-icon" sizes="512x512" href="favicon-al-taj.png?v=20261004">
+  <link rel="manifest" href="site.webmanifest?v=20261004">
   <meta name="theme-color" content="#9B0D17">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Al Taj Clinic">
 
+  <!-- Bootstrap 5.3 utilities and responsive grid -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261016-1">
 
   <!-- Schema.org MedicalClinic Structured Data for Local SEO -->
   <script type="application/ld+json">
@@ -48,7 +53,7 @@
     "@type": "MedicalClinic",
     "name": "Al Taj Alfadhi Clinic",
     "alternateName": "عيادة التاج الفضي",
-    "image": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://altajfadhaiclinic.ae/assests/Al%20Taj%20Fadhai%20Clinic%20PIc.jpeg",
     "telephone": "+97167044671",
     "url": "https://altajfadhaiclinic.ae",
     "address": {
@@ -132,6 +137,8 @@
     <div class="nav-container">
       <!-- Clinic Brand Logo -->
       <a href="index.html" class="brand-logo" aria-label="Al Taj Alfadhi Clinic Home">
+        <img src="assests/al-taj-alfadhi-logo-transparent.png?v=20261004" class="brand-logo-image"
+          alt="Al Taj Alfadhi Clinic" width="214" height="76">
         <svg class="logo-symbol" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M24 16V44" stroke="#BFAA91" stroke-width="7" stroke-linecap="round" />
           <path d="M38 16V44" stroke="#BFAA91" stroke-width="7" stroke-linecap="round" />
@@ -245,6 +252,8 @@
               points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
             </polygon>
           </svg><span>PRP & Aesthetic Care</span></a>
+        <a href="about.html#faq" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.1 9a3 3 0 1 1 5.8 1c0 2-3 2-3 4"></path><line x1="12" y1="18" x2="12.01" y2="18"></line></svg><span>Patient Resources</span></a>
         <a href="appointment.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2">
             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -303,8 +312,8 @@
           across Sharjah and Dubai with licensed physicians.
         </p>
 
-        <div class="hero-actions">
-          <a href="appointment.html" class="btn-primary">
+        <div class="hero-actions" aria-label="Quick clinic actions">
+          <a href="appointment.html" class="btn-primary hero-action-btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
               <line x1="16" y1="2" x2="16" y2="6"></line>
@@ -313,11 +322,15 @@
             </svg>
             Book a Consultation
           </a>
-          <a href="services.html" class="btn-secondary btn-secondary-glass">
+          <a href="services.html" class="btn-secondary btn-secondary-glass hero-action-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M9 12l2 2 4-4"></path>
+            </svg>
             Explore Our Services
           </a>
           <a href="https://wa.me/971509691037?text=Hello%20Al%20Taj%20Alfadhi%20Clinic,%20I%20would%20like%20to%20inquire%20about%20a%20consultation."
-            target="_blank" rel="noopener" class="btn-whatsapp">
+            target="_blank" rel="noopener" class="btn-whatsapp hero-action-btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path
                 d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
@@ -368,11 +381,115 @@
   </section>
 
   <!-- ========================================================================
+       Inside Al Taj Alfadhi Clinic
+       ======================================================================== -->
+  <section class="clinic-showcase section-white" id="clinic-gallery" aria-labelledby="clinic-gallery-title">
+    <div class="container">
+      <div class="row align-items-end g-4 mb-4 mb-lg-5">
+        <div class="col-lg-7">
+          <span class="section-badge">Our Clinic</span>
+          <h2 class="section-title mb-3" id="clinic-gallery-title">A modern, welcoming space for
+            <span class="accent-burgundy">personal care</span>
+          </h2>
+          <p class="section-subtitle mb-0">Step inside our Industrial Area 11 clinic in Sharjah. Our bright reception,
+            comfortable waiting area, and professional treatment spaces are designed around privacy, hygiene, and ease.</p>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <a href="contact.html" class="btn-secondary clinic-showcase-link">Visit Al Taj Alfadhi Clinic</a>
+        </div>
+      </div>
+
+      <div id="clinicPhotoCarousel" class="carousel slide clinic-carousel" data-bs-ride="carousel"
+        data-bs-interval="3800" data-bs-pause="false" data-bs-touch="true"
+        aria-label="Al Taj Alfadhi Clinic photo gallery">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#clinicPhotoCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Clinic exterior"></button>
+          <button type="button" data-bs-target="#clinicPhotoCarousel" data-bs-slide-to="1"
+            aria-label="Clinic reception"></button>
+          <button type="button" data-bs-target="#clinicPhotoCarousel" data-bs-slide-to="2"
+            aria-label="Patient waiting area"></button>
+          <button type="button" data-bs-target="#clinicPhotoCarousel" data-bs-slide-to="3"
+            aria-label="Clinic interior"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assests/Al%20Taj%20Fadhai%20Clinic%20PIc.jpeg" class="d-block w-100"
+              alt="Illuminated exterior of Al Taj Alfadhi Clinic in Sharjah at night" decoding="async">
+            <div class="carousel-caption">
+              <span>Industrial Area 11, Sharjah</span>
+              <h3>Welcome to Al Taj Alfadhi Clinic</h3>
+              <p>Professional medical care in a convenient, easy-to-find location.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assests/Al%20Taj%20Reception%20pic.jpeg" class="d-block w-100"
+              alt="Modern reception desk and branded interior at Al Taj Alfadhi Clinic" loading="lazy" decoding="async">
+            <div class="carousel-caption">
+              <span>A warm welcome</span>
+              <h3>Modern reception</h3>
+              <p>A bright, professional arrival experience for every patient.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assests/Reception%20PIC%202.jpeg" class="d-block w-100"
+              alt="Comfortable patient reception and waiting area at Al Taj Alfadhi Clinic" loading="lazy" decoding="async">
+            <div class="carousel-caption">
+              <span>Designed for comfort</span>
+              <h3>Patient waiting area</h3>
+              <p>Comfortable seating in a clean, calm clinical environment.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assests/clinic%20pic%203.jpeg" class="d-block w-100"
+              alt="Clean and spacious interior of Al Taj Alfadhi Clinic in Sharjah" loading="lazy" decoding="async">
+            <div class="carousel-caption">
+              <span>Carefully maintained</span>
+              <h3>Clean, calm surroundings</h3>
+              <p>A welcoming space designed around patient privacy and hygiene.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#clinicPhotoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous clinic photo</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clinicPhotoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next clinic photo</span>
+        </button>
+      </div>
+
+      <div class="owner-spotlight row g-0 align-items-stretch mt-4 mt-lg-5">
+        <div class="col-lg-5 owner-spotlight-media">
+          <img src="assests/DR%20Bushra%20Sobia%20owner%20of%20clinic.jpeg"
+            alt="Dr. Bushra Sobia, owner of Al Taj Alfadhi Clinic, standing in the clinic reception"
+            loading="lazy" decoding="async">
+          <span class="owner-photo-label">Clinic Owner &amp; General Physician</span>
+        </div>
+        <div class="col-lg-7 owner-spotlight-content">
+          <span class="owner-eyebrow">Meet the Founder</span>
+          <h2>Dr. Bushra Sobia</h2>
+          <p class="owner-role">Owner of Al Taj Alfadhi Clinic</p>
+          <p>Dr. Bushra leads the clinic with a patient-first vision: accessible medical care, attentive consultations,
+            and a professional environment where every patient is treated with dignity and compassion.</p>
+          <div class="owner-values">
+            <span>Licensed physician</span>
+            <span>Personalised care</span>
+            <span>Preventive care</span>
+          </div>
+          <a href="doctors.html" class="btn-primary mt-4">Meet Dr. Bushra</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
        4. Services Section (6 Core Specialties)
        ======================================================================== -->
   <section class="section-cream">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal-on-scroll">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"></circle>
@@ -389,8 +506,8 @@
         <!-- 1. General Medicine -->
         <div class="service-card">
           <div class="service-card-media">
-            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80"
-              alt="General Medicine Consultation Sharjah" class="service-card-img">
+            <img class="service-card-img" src="assests/service-general-medicine.webp"
+              alt="Doctor providing a personal general medicine consultation" loading="lazy" decoding="async">
             <div class="service-badge-overlay">Primary Care</div>
           </div>
           <div class="service-card-content">
@@ -433,8 +550,8 @@
         <!-- 2. Outpatient Surgery & Minor Wound Care -->
         <div class="service-card">
           <div class="service-card-media">
-            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80"
-              alt="Outpatient Minor Wound Suturing Sharjah" class="service-card-img">
+            <img class="service-card-img" src="assests/service-outpatient-care.webp"
+              alt="Clinician applying a sterile outpatient wound dressing" loading="lazy" decoding="async">
             <div class="service-badge-overlay">Outpatient Care</div>
           </div>
           <div class="service-card-content">
@@ -477,8 +594,8 @@
         <!-- 3. Urogenital Health & Men's Care -->
         <div class="service-card">
           <div class="service-card-media">
-            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=800&q=80"
-              alt="Urogenital Health and Wellness Consultation" class="service-card-img">
+            <img class="service-card-img" src="assests/service-mens-health.webp"
+              alt="Private men's health consultation with a physician" loading="lazy" decoding="async">
             <div class="service-badge-overlay">Men & Women</div>
           </div>
           <div class="service-card-content">
@@ -490,8 +607,8 @@
                 </svg>
               </div>
               <h3 class="service-title">Urogenital Health & Men's Care</h3>
-              <p class="service-desc">Discreet evaluation and treatment of urinary tract disorders, male reproductive
-                wellness, hormone profiling, and fertility investigations.</p>
+              <p class="service-desc">Discreet assessment and treatment of urinary tract concerns, routine health
+                screening, symptom evaluation, and appropriate clinical follow-up.</p>
               <div class="service-features">
                 <div class="service-feature-item">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -503,7 +620,7 @@
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Semen Analysis & Hormone Diagnostics</span>
+                  <span>Urinary Health Assessment & Follow-up</span>
                 </div>
               </div>
             </div>
@@ -522,8 +639,8 @@
         <!-- 4. PRP Treatment (Hair Restoration) -->
         <div class="service-card card-featured">
           <div class="service-card-media">
-            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
-              alt="PRP Hair Restoration Treatment Sharjah" class="service-card-img">
+            <img class="service-card-img" src="assests/service-prp-hair.webp"
+              alt="Clinician assessing a patient's scalp for hair restoration" loading="lazy" decoding="async">
             <div class="service-badge-overlay">Popular Aesthetic</div>
           </div>
           <div class="service-card-content">
@@ -566,8 +683,8 @@
         <!-- 5. Skin Rejuvenation (Facial PRP) -->
         <div class="service-card card-featured">
           <div class="service-card-media">
-            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
-              alt="Facial PRP Vampire Glow Rejuvenation" class="service-card-img">
+            <img class="service-card-img" src="assests/service-facial-rejuvenation.webp"
+              alt="Clinician assessing a patient's skin for facial rejuvenation" loading="lazy" decoding="async">
             <div class="service-badge-overlay">Glow Therapy</div>
           </div>
           <div class="service-card-content">
@@ -609,12 +726,13 @@
           </div>
         </div>
 
-        <!-- 6. Antenatal & Maternal Checkups -->
+        <!-- 6. Preventive Health Screening -->
         <div class="service-card">
           <div class="service-card-media">
-            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80"
-              alt="Antenatal Maternal Healthcare Sharjah" class="service-card-img">
-            <div class="service-badge-overlay">Maternal Health</div>
+            <img class="service-card-img" src="assests/service-preventive-screening-v2.png"
+              alt="Doctor providing a preventive health screening and blood pressure check" width="1448" height="1086"
+              loading="lazy" decoding="async">
+            <div class="service-badge-overlay">Preventive Care</div>
           </div>
           <div class="service-card-content">
             <div>
@@ -626,15 +744,15 @@
                   <line x1="15" y1="9" x2="15.01" y2="9"></line>
                 </svg>
               </div>
-              <h3 class="service-title">Antenatal & Maternal Checkups</h3>
-              <p class="service-desc">First-trimester scans, routine prenatal blood tests, gestational diabetes
-                screenings, and comprehensive postpartum wellness consultations.</p>
+              <h3 class="service-title">Preventive Health Screening</h3>
+              <p class="service-desc">Routine blood pressure, glucose and general wellness checks with practical
+                medical guidance and follow-up planning.</p>
               <div class="service-features">
                 <div class="service-feature-item">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Routine Prenatal Diagnostics</span>
+                  <span>Routine Vitals & Wellness Review</span>
                 </div>
                 <div class="service-feature-item">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -646,7 +764,7 @@
             </div>
             <div class="service-card-footer">
               <span style="font-size: 0.84rem; font-weight: 700; color: var(--color-taupe-dark);">From AED 200</span>
-              <a href="appointment.html?service=Antenatal%20Care" class="service-link">
+              <a href="appointment.html?service=Preventive%20Health%20Screening" class="service-link">
                 <span>Learn More</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <polyline points="9 18 15 12 9 6"></polyline>
@@ -767,7 +885,7 @@
        ======================================================================== -->
   <section class="section-white">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal-on-scroll">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -784,27 +902,27 @@
 
       <div class="doctors-grid">
         <!-- Doctor 1: Dr. Bushra Sobia -->
-        <div class="doctor-card">
-          <div class="doctor-monogram-shield">
-            <div class="doctor-crest-ring">
-              <span class="doctor-monogram-letters">DB</span>
-            </div>
-            <div class="doctor-seal-title">Dr. Bushra Sobia</div>
+        <div class="doctor-card physician-card-featured reveal-on-scroll" id="physician-bushra">
+          <div class="doctor-card-top doctor-card-top-photo">
+            <img src="assests/dr%20bia%20doing%20clinic%20work.jpeg"
+              alt="Dr. Bushra Sobia, owner and general physician at Al Taj Alfadhi Clinic, providing clinical care"
+              class="doctor-photo doctor-photo-bushra" width="720" height="1280" loading="lazy" decoding="async">
             <div class="doctor-badge-lic">SHA & MOH Lic. D46336</div>
+            <div class="doctor-photo-caption">Clinic Owner &amp; Medical Lead</div>
           </div>
           <div class="doctor-card-body">
             <h3 class="doctor-name">Dr. Bushra Sobia</h3>
-            <div class="doctor-role">General Physician & Aesthetic PRP Specialist</div>
+            <div class="doctor-role">Clinic Owner, General Physician & Aesthetic PRP Specialist</div>
 
             <div class="doctor-tags">
               <span class="doctor-tag">Primary Healthcare</span>
               <span class="doctor-tag">PRP Hair Loss</span>
               <span class="doctor-tag">Facial Vampire Glow</span>
-              <span class="doctor-tag">Antenatal Care</span>
+              <span class="doctor-tag">Preventive Care</span>
             </div>
 
             <p class="doctor-bio">
-              Dr. Bushra Sobia combines deep medical training in preventive medicine, maternal health, and non-surgical
+              Dr. Bushra Sobia combines deep medical training in preventive medicine, primary care, and non-surgical
               aesthetic rejuvenation. She specializes in autologous Platelet-Rich Plasma therapies for hair restoration
               and skin glow.
             </p>
@@ -828,7 +946,7 @@
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Antenatal & Preventive Women's Wellness</span>
+                  <span>Preventive Screening & Routine Health Monitoring</span>
                 </div>
               </div>
             </div>
@@ -847,7 +965,7 @@
         </div>
 
         <!-- Doctor 2: Dr. Khan Mehmood Zarbat Khan -->
-        <div class="doctor-card">
+        <div class="doctor-card reveal-on-scroll">
           <div class="doctor-monogram-shield">
             <div class="doctor-crest-ring">
               <span class="doctor-monogram-letters">DK</span>
@@ -861,14 +979,14 @@
 
             <div class="doctor-tags">
               <span class="doctor-tag">MBBS</span>
-              <span class="doctor-tag">Male Infertility</span>
+              <span class="doctor-tag">General Medicine</span>
               <span class="doctor-tag">Urogenital Health</span>
               <span class="doctor-tag">Outpatient Wound Suturing</span>
             </div>
 
             <p class="doctor-bio">
               Dr. Khan Mehmood Zarbat Khan brings extensive clinical experience in internal medicine, urogenital tract
-              disorders, male reproductive evaluations, and outpatient wound suturing and care under strict sterile
+              concerns, routine diagnostic evaluations, and outpatient wound suturing and care under strict sterile
               conditions.
             </p>
 
@@ -1034,10 +1152,10 @@
                 Therapy (AED 450)</button>
               <button type="button" class="calc-chip" data-name="PRP Facial Rejuvenation" data-price="500">PRP Vampire
                 Face (AED 500)</button>
-              <button type="button" class="calc-chip" data-name="Male Infertility Evaluation" data-price="250">Male
-                Infertility Care (AED 250)</button>
-              <button type="button" class="calc-chip" data-name="Antenatal Check & Monitoring"
-                data-price="180">Antenatal Health Check (AED 180)</button>
+              <button type="button" class="calc-chip" data-name="Urinary Health Consultation" data-price="250">Urinary
+                Health Consultation (AED 250)</button>
+              <button type="button" class="calc-chip" data-name="Preventive Health Screening"
+                data-price="180">Preventive Health Screening (AED 180)</button>
               <button type="button" class="calc-chip" data-name="Minor Stitches & Wound Care" data-price="200">Minor
                 Stitches & Dressing (AED 200)</button>
             </div>
@@ -1182,9 +1300,9 @@
                   <option value="General Physician Consultation">General Physician Consultation (From AED 150)</option>
                   <option value="PRP Hair Loss Session">PRP Hair Loss Session (AED 450)</option>
                   <option value="PRP Facial Rejuvenation">Skin Rejuvenation & Facial PRP (AED 500)</option>
-                  <option value="Male Infertility Evaluation">Urogenital & Men's Health (From AED 250)</option>
+                  <option value="Urinary Health Consultation">Urinary Health Consultation (From AED 250)</option>
                   <option value="Minor Stitches & Wound Care">Outpatient Stitches & Wound Care (From AED 200)</option>
-                  <option value="Antenatal Check & Monitoring">Antenatal & Maternal Checkup (From AED 200)</option>
+                  <option value="Preventive Health Screening">Preventive Health Screening (From AED 180)</option>
                 </select>
               </div>
             </div>
@@ -1597,7 +1715,7 @@
             <li><a href="services.html" class="footer-link"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2">
                   <polyline points="9 18 15 12 9 6"></polyline>
-                </svg> Antenatal Monitoring</a></li>
+                </svg> Preventive Health Screening</a></li>
           </ul>
         </div>
 
@@ -1781,7 +1899,7 @@
   </a>
 
   <!-- Script File -->
-  <script src="app.js"></script>
+  <script src="app.js?v=20261016-1"></script>
 </body>
 
 </html>

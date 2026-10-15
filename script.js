@@ -101,7 +101,6 @@ const DICTIONARY_AR = {
   "Men & Women": "رجال ونساء",
   "Urogenital Health & Men's Care": "صحة الجهاز البولي ورعاية الرجال",
   "Urogenital Health & Men's Wellness": "صحة الجهاز البولي واستشارات الذكورة",
-  "Discreet evaluation and treatment of urinary tract disorders, male reproductive wellness, hormone profiling, and fertility investigations.": "تقييم وعلاج سري لاضطرابات المسالك البولية، وصحة الجهاز التناسلي للرجال، والفحوصات الهرمونية، واستشارات الخصوبة.",
   "Confidential Clinical Environment": "بيئة علاجية تتسم بأعلى درجات السرية",
   "Semen Analysis & Hormone Diagnostics": "تحاليل السائل المنوي والفحوصات الهرمونية",
 
@@ -122,8 +121,6 @@ const DICTIONARY_AR = {
   "Collagen Remodeling & Radiance": "تحفيز الكولاجين واستعادة إشراقة البشرة",
   "Minimal Downtime & Sterile Kits": "فترة تعافي قصيرة وأدوات معقمة ذات استخدام واحد",
 
-  "Maternal Health": "صحة الأمومة",
-  "Antenatal & Maternal Checkups": "متابعة الحمل والرعاية الصحية للأمهات",
   "First-trimester scans, routine prenatal blood tests, gestational diabetes screenings, and comprehensive postpartum wellness consultations.": "متابعة مراحل الحمل الأولى، وتحاليل الدم الروتينية للحوامل، وفحص سكري الحمل، واستشارات صحة الأم بعد الولادة.",
   "Routine Prenatal Diagnostics": "فحوصات وتشخيصات الحمل الروتينية",
   "Dr. Bushra Sobia": "الدكتورة بشرى سوبيا",
@@ -175,16 +172,10 @@ const DICTIONARY_AR = {
   "Primary Healthcare": "الرعاية الصحية الأولية",
   "PRP Hair Loss": "علاج تساقط الشعر بالبلازما",
   "Facial Vampire Glow": "نضارة الوجه Vampire Glow",
-  "Antenatal Care": "رعاية ومتابعة الحوامل",
-  "Male Infertility": "صحة وخصوبة الرجال",
   "MBBS": "بكالوريوس طب وجراحة (MBBS)",
   "Urogenital Health": "صحة الجهاز البولي والذكورة",
   "Outpatient Wound Suturing": "خياطة الجروح والغيار السريري",
   "PRP Scalp & Hair": "بلازما فروة الرأس والشعر",
-  "Women's Wellness": "صحة المرأة والوقاية",
-  "Dr. Bushra Sobia combines deep medical training in preventive medicine, maternal health, and non-surgical aesthetic rejuvenation. She specializes in autologous Platelet-Rich Plasma therapies for hair restoration and skin glow.": "تجمع الدكتورة بشرى سوبيا بين التدريب الطبي العميق في الطب الوقائي، وصحة الأمومة، وعلاجات التجديد التجميلي غير الجراحي. وتختص في علاجات البلازما الغنية بالصفائح (PRP) لاستعادة حيوية الشعر ونضارة البشرة.",
-  "Dr. Khan Mehmood Zarbat Khan brings extensive clinical experience in internal medicine, urogenital tract disorders, male reproductive evaluations, and outpatient wound suturing and care under strict sterile conditions.": "يتمتع الدكتور خان محمود زربات خان بخبرة سريرية واسعة في الأمراض الباطنية، واضطرابات الجهاز البولي، وفحوصات الصحة الإنجابية للذكور، وخياطة الجروح ورعايتها ضمن أعلى معايير التعقيم الطبي.",
-  "Specializing in aesthetic medicine, clinical PRP hair and facial rejuvenation, maternal checkups, and family health. Over 10 years of clinical experience in UAE healthcare.": "متخصصة في الطب العام، وعلاجات البلازما التجميلية للشعر والوجه، ومتابعة الحمل، ورعاية صحة الأسرة. خبرة سريرية لأكثر من 10 سنوات في الإمارات.",
   "Specializing in general medicine, urogenital health, outpatient wound suturing & minor procedures, chronic disease management, and preventive screenings.": "متخصص في الطب العام، وصحة الجهاز البولي والذكورة، وخياطة الجروح والغيار السريري، وإدارة الأمراض المزمنة والفحوصات الوقائية.",
   "Specialized Credentials": "المؤهلات والاعتمادات التخصصية",
   "SPECIALIZED CREDENTIALS": "المؤهلات والاعتمادات التخصصية",
@@ -192,11 +183,9 @@ const DICTIONARY_AR = {
   "Licensed General Practitioner (Lic. D46336)": "طبيبة عامة مرخصة (ترخيص D46336)",
   "Advanced Certification in Aesthetic PRP Therapies": "شهادة متقدمة في علاجات البلازما التجميلية",
   "Advanced Certification in Aesthetic PRP & Microneedling": "شهادة متقدمة في البلازما التجميلية والديرمابن",
-  "Antenatal & Preventive Women's Wellness": "رعاية الحوامل وصحة المرأة الوقائية",
   "Bachelor of Medicine & Bachelor of Surgery (MBBS)": "بكالوريوس الطب والجراحة (MBBS)",
   "Licensed General Practitioner (Lic. DI01602)": "طبيب عام مرخص (ترخيص DI01602)",
   "Outpatient Sterile Suturing & Wound Dressing": "خياطة الجروح المعقمة والغيار الجراحي",
-  "Maternal Health & Antenatal Vital Monitoring": "متابعة صحة الأم والعلامات الحيوية للجنين",
   "Chronic Metabolic & Hypertension Oversight": "إدارة الأمراض الأيضية وارتفاع ضغط الدم",
   "Book with Dr. Bushra": "حجز موعد مع د. بشرى",
   "Book with Dr. Khan": "حجز موعد مع د. خان",
@@ -233,8 +222,6 @@ const DICTIONARY_AR = {
   "General Consultation (AED 150)": "استشارة طب عام (150 درهم)",
   "PRP Hair Therapy (AED 450)": "علاج الشعر بالبلازما (450 درهم)",
   "PRP Vampire Face (AED 500)": "بلازما نضارة الوجه (500 درهم)",
-  "Male Infertility Care (AED 250)": "استشارة صحة الرجال (250 درهم)",
-  "Antenatal Health Check (AED 180)": "فحص ورعاية الحمل (180 درهم)",
   "Minor Stitches & Dressing (AED 200)": "خياطة الجروح والغيار (200 درهم)",
   "Any Available Specialist (No Extra Fee)": "أي طبيب متاح (بدون رسوم إضافية)",
   "Dr. Bushra Sobia (General & Aesthetic Specialist)": "د. بشرى سوبيا (أخصائية الطب العام والتجميل)",
@@ -251,8 +238,6 @@ const DICTIONARY_AR = {
   "General Physician Consultation": "استشارة طبيب عام",
   "PRP Hair Loss Session": "جلسة بلازما تساقط الشعر",
   "PRP Facial Rejuvenation": "بلازما نضارة وتجديد الوجه",
-  "Male Infertility Evaluation": "تقييم عقم وخصوبة الرجال",
-  "Antenatal Check & Monitoring": "فحص ومتابعة الحمل",
   "Minor Stitches & Wound Care": "خياطة الجروح والعناية السريرية",
   "Included": "مشمول",
 
@@ -602,7 +587,7 @@ function initCuteTajBot() {
 
     if (input.includes('doctor') || input.includes('bushra') || input.includes('khan')) {
       return {
-        text: "Our MOH/SHA licensed physicians:<br>• <strong>Dr. Bushra Sobia (Lic. D46336):</strong> General Practice, Aesthetic PRP, Antenatal Checkups.<br>• <strong>Dr. Khan Mehmood (Lic. DI01602):</strong> General Medicine, Urogenital & Men's Health, Outpatient Wound Suturing.",
+        text: "Our MOH/SHA licensed physicians:<br>• <strong>Dr. Bushra Sobia (Lic. D46336):</strong> General Practice, Preventive Care, Aesthetic PRP.<br>• <strong>Dr. Khan Mehmood (Lic. DI01602):</strong> General Medicine, Urinary Health, Outpatient Wound Suturing.",
         replies: ["Book with Dr. Bushra", "Book with Dr. Khan", "WhatsApp Dr. Bushra", "Clinic Timings"]
       };
     }
